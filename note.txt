@@ -1,0 +1,19 @@
+﻿Mots de passe des applications: zvpa yvmp aocg uiwg
+
+part A:
+controler -> account, media, acces
+rightclick -> getDefinition -> set defaultAction in routeconfig
+controller = "Accounts" action = "Login"
+doit faire des mises a jour dans la vue details
+
+[UserAccess(Models.Access.[xxx])] --> put befor functions and even classes ([xxx] -> Writte,Admin,Read,etc)
+
+static DefaultConfig() => "/Medias/List"
+return Redirect(RouteConfig.DefaultConfig()); <-- instead of always putting ^
+
+
+For azure:
+service plan gratuit -> Est Us
+app service < wikimedia-202431027           (url to send for azure => wikimedia-202431027.azureWebsites.net)
+in visualstudio -> generer -> publier webAplication -> make with azure -> azure app service windows -> create new entry -> remove the added number, name=^, do not change , groupeRessource="" + planEbergement="HP-202431027" + Est US + pick the free one -> create -> click green button
+app_data  is not a part of the project <= to avoid complications between the stuff (include it in the publishing but don't afterwards)
